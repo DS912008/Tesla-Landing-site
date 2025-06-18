@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tesla Landing Site</title>
+
+  <!-- Google Font: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config to Extend Font -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom font-size for base rem units -->
+  <style>
+    html {
+      font-size: 62.5%;
+    }
+  </style>
+
+</head>
+<body class="scroll-smooth font-sans bg-white">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between w-full fixed top-0 z-10 h-[5.4rem] p-[3.2rem] bg-white shadow">
+    <!-- Logo -->
+    <img src="tesla.svg" alt="Tesla Logo" class="h-6" />
+
+    <!-- Navigation Links -->
+    <div class="hidden lg:block">
+      <a href="#modelS" class="text-2xl font-semibold text-[#181b21] mx-2 px-2 py-1 rounded-lg hover:bg-[#181b21]/10 transition-all">Model S</a>
+      <a href="#model3" class="text-2xl font-semibold text-[#181b21] mx-2 px-2 py-1 rounded-lg hover:bg-[#181b21]/10 transition-all">Model 3</a>
+      <a href="#modelX" class="text-2xl font-semibold text-[#181b21] mx-2 px-2 py-1 rounded-lg hover:bg-[#181b21]/10 transition-all">Model X</a>
+      <a href="#modelY" class="text-2xl font-semibold text-[#181b21] mx-2 px-2 py-1 rounded-lg hover:bg-[#181b21]/10 transition-all">Model Y</a>
+      <a href="#solarRoof" class="text-2xl font-semibold text-[#181b21] mx-2 px-2 py-1 rounded-lg hover:bg-[#181b21]/10 transition-all">Solar Roof</a>
+      <a href="#solarPanels" class="text-2xl font-semibold text-[#181b21] mx-2 px-2 py-1 rounded-lg hover:bg-[#181b21]/10 transition-all">Solar Panels</a>
+    </div>
+
+    <!-- External Links -->
+    <div>
+      <a href="#shop" class="text-2xl font-semibold text-[#181b21] mx-2 px-2 py-1 rounded-lg hover:bg-[#181b21]/10 transition-all">Shop</a>
+      <a href="#account" class="text-2xl font-semibold text-[#181b21] mx-2 px-2 py-1 rounded-lg hover:bg-[#181b21]/10 transition-all">Account</a>
+      <a href="#menu" class="text-2xl font-semibold text-[#181b21] mx-2 px-2 py-1 rounded-lg hover:bg-[#181b21]/10 transition-all">Menu</a>
+    </div>
+  </header>
+
+  <!-- Hero Section: Model S -->
+  <section id="modelS" class="relative w-full h-screen">
+    <!-- Background Image -->
+    <img src="ModelS.jfif" alt="Model S Image" class="w-full h-full object-cover" />
+    <!-- Headings -->
+    <div class="absolute top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <h1 class="text-[4rem] text-[#393c41] font-semibold">Model S</h1>
+      <h2 class="text-[#4c4d51] text-2xl">Order Online For <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+  
+    <!-- Buttons -->
+    <div class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex gap-8">
+      <button class="text-xl text-white bg-[#171a20] font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-80">Custom Order</button>
+      <button class="text-xl text-[#393c41] bg-white font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-60">Existing Inventory</button>
+    </div>
+  
+    <a href="#model3">
+      <!-- Down Arrow -->
+      <svg class="w-full h-20 mx-auto absolute top-[93%] animate-bounce" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="var(--tds-icon--fill,#171a20)" stroke-width="1.5" d="M19.5 12.5 15 16.5 10.5 12.5" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </section>
+
+  
+  <!-- Hero Section: Model 3 -->
+  <section id="model3" class="relative w-full h-screen">
+    <!-- Background Image -->
+    <img src="Model3.jfif" alt="Model 3 Image" class="w-full h-full object-cover" />
+    <!-- Headings -->
+    <div class="absolute top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <h1 class="text-[4rem] text-[#393c41] font-semibold">Model 3</h1>
+      <h2 class="text-[#4c4d51] text-2xl">Order Online For <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+  
+    <!-- Buttons -->
+    <div class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex gap-8">
+      <button class="text-xl text-white bg-[#171a20] font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-80 flex flex-col lg:flex-row">Custom Order</button>
+      <button class="text-xl text-[#393c41] bg-white font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-60 flex flex-col lg:flex-row l">Existing Inventory</button>
+    </div>
+  
+    <a href="#modelX">
+      <!-- Down Arrow -->
+      <svg class="w-full h-20 mx-auto absolute top-[93%] animate-bounce" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="var(--tds-icon--fill,#171a20)" stroke-width="1.5" d="M19.5 12.5 15 16.5 10.5 12.5" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </section>
+
+  
+
+  <!-- Hero Section: Model X -->
+  <section id="modelX" class="relative w-full h-screen">
+    <!-- Background Image -->
+    <img src="ModelX.jfif" alt="Model X Image" class="w-full h-full object-cover" />
+    <!-- Headings -->
+    <div class="absolute top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <h1 class="text-[4rem] text-[#393c41] font-semibold">Model X</h1>
+      <h2 class="text-[#4c4d51] text-2xl">Order Online For <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+  
+    <!-- Buttons -->
+    <div class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex gap-8">
+      <button class="text-xl text-white bg-[#171a20] font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-80">Custom Order</button>
+      <button class="text-xl text-[#393c41] bg-white font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-60 lg:ml-8">Existing Inventory</button>
+    </div>
+  
+    <a href="#modelY">
+      <!-- Down Arrow -->
+      <svg class="w-full h-20 mx-auto absolute top-[93%] animate-bounce" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="var(--tds-icon--fill,#171a20)" stroke-width="1.5" d="M19.5 12.5 15 16.5 10.5 12.5" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </section>
+
+  
+  <!-- Hero Section: Model Y -->
+  <section id="modelY" class="relative w-full h-screen">
+    <!-- Background Image -->
+    <img src="ModelY.jfif" alt="Model Y Image" class="w-full h-full object-cover" />
+    <!-- Headings -->
+    <div class="absolute top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <h1 class="text-[4rem] text-[#393c41] font-semibold">Model Y</h1>
+      <h2 class="text-[#4c4d51] text-2xl">Order Online For <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+  
+    <!-- Buttons -->
+    <div class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex gap-8">
+      <button class="text-xl text-white bg-[#171a20] font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-80">Custom Order</button>
+      <button class="text-xl text-[#393c41] bg-white font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-60">Existing Inventory</button>
+    </div>
+  
+    <a href="#SolarRoof">
+      <!-- Down Arrow -->
+      <svg class="w-full h-20 mx-auto absolute top-[93%] animate-bounce" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="var(--tds-icon--fill,#171a20)" stroke-width="1.5" d="M19.5 12.5 15 16.5 10.5 12.5" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </section>
+
+  
+
+  <!-- Hero Section: SolarRoof -->
+  <section id="SolarRoof" class="relative w-full h-screen">
+    <!-- Background Image -->
+    <img src="SolarRoof.jfif" alt="Model S Image" class="w-full h-full object-cover" />
+    <!-- Headings -->
+    <div class="absolute top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <h1 class="text-[4rem] text-[#393c41] font-semibold">SolarRoof</h1>
+      <h2 class="text-[#4c4d51] text-2xl">Order Online For <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+  
+    <!-- Buttons -->
+    <div class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex gap-8">
+      <button class="text-xl text-white bg-[#171a20] font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-80">Custom Order</button>
+      <button class="text-xl text-[#393c41] bg-white font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-60">Existing Inventory</button>
+    </div>
+  
+    <a href="#SolarPanels">
+      <!-- Down Arrow -->
+      <svg class="w-full h-20 mx-auto absolute top-[93%] animate-bounce" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="var(--tds-icon--fill,#171a20)" stroke-width="1.5" d="M19.5 12.5 15 16.5 10.5 12.5" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </section>
+
+  
+  <!-- Hero Section: SolarRoof -->
+  <section id="SolarPanels" class="relative w-full h-screen">
+    <!-- Background Image -->
+    <img src="SolarPanels.jfif" alt="SolarPanels Image" class="w-full h-full object-cover" />
+    <!-- Headings -->
+    <div class="absolute top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <h1 class="text-[4rem] text-[#393c41] font-semibold">SolarPanels</h1>
+      <h2 class="text-[#4c4d51] text-2xl">Order Online For <span class="underline cursor-pointer">Touchless Delivery</span></h2>
+    </div>
+  
+    <!-- Buttons -->
+    <div class="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex gap-8">
+      <button class="text-xl text-white bg-[#171a20] font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-80">Custom Order</button>
+      <button class="text-xl text-[#393c41] bg-white font-medium py-2 px-6 rounded-full w-[25.5rem] h-16 bg-opacity-60">Existing Inventory</button>
+    </div>
+  
+    
+  </section>
+
+  
+  
+</body>
+</html>
